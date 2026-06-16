@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillCraft Stopwatch</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark">
+
+    <div class="theme-buttons">
+        <button onclick="changeTheme('dark')">🌙</button>
+        <button onclick="changeTheme('light')">☀️</button>
+        <button onclick="changeTheme('purple')">💜</button>
+    </div>
+
+    <div class="container">
+
+        <h1 class="title">SkillCraft Stopwatch</h1>
+        <p class="subtitle">Time every moment beautifully.</p>
+
+        <div class="timer" id="display">
+            00:00:00:000
+        </div>
+
+        <div class="buttons">
+            <button id="start">Start</button>
+            <button id="pause">Pause</button>
+            <button id="reset">Reset</button>
+            <button id="lap">Lap</button>
+        </div>
+
+        <div class="lap-container">
+            <h3>Lap Times</h3>
+            <ul id="laps"></ul>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
